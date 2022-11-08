@@ -5,7 +5,9 @@
 
 body {
     height: 100vh;
-    background-image: linear-gradient(85deg, rgb(172, 172, 172), rgb(95, 148, 209));
+    background-image: url(../img/blurry-gradient-haikei.svg);
+    background-position: center;
+    background-size: cover;
 
     display: flex;
     align-items: center;
@@ -14,28 +16,13 @@ body {
 
 h1 {
     font-size: 20px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.781);
 }
 
 h2 {
     margin: 10px 0;
     font-size: 20px;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-
-    height: 300px;
-    width: 40%;
-    max-width: 320px;
-    padding: 20px;
-
-    background-image: linear-gradient(45deg, white, white);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 5px 5px 25px -5px black;
 }
 
 
@@ -50,6 +37,7 @@ h2 {
 input {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 .simbol {
@@ -60,6 +48,7 @@ input {
     background-color: rgba(128, 128, 128, 0.425);
     height: 100%;
     border: 2px solid rgb(165, 165, 165);
+    border-radius: 5px;
 }
 
 .tipText {
@@ -68,6 +57,7 @@ input {
     justify-content: center;
     background-color: rgba(128, 128, 128, 0.452);
     border: none;
+    border-radius: 5px;
     width: 100%;
     height: 100%;
 }
@@ -75,3 +65,33 @@ input {
 .rangeOutput {
     padding: 3px;
 }
+
+
+.card {
+    width: 323px;
+    height: 320px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 322px;
+    height: 322px;
+    background-color: #86868698;
+    border-radius: 15px;
+    transition: all .2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
