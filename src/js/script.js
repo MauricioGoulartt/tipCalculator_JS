@@ -14,6 +14,7 @@ inputRange.addEventListener('mousedown', function () {
         }, 10)
 }) 
 
+
 inputRange.addEventListener('mouseup', function () {
     clearInterval(interval)
 
@@ -31,6 +32,36 @@ inputRange.addEventListener('mouseup', function () {
         document.querySelector('#outputBill').value = `R$: ${' '}`
     }
 }) 
+
+//MOBILE
+
+inputRange.addEventListener('change', function () {
+    clearInterval(interval)
+
+    interval = setInterval(() => {
+        document.querySelector('.rangeOutput').innerHTML = inputRange.value + '%'
+    }, 10)
+})
+
+inputRange.addEventListener('touchmove', function () {
+    clearInterval(interval)
+
+    const result = (inputRange.value * inputReais.value) / 100
+
+    const amountTip = parseFloat(inputReais.value) + parseFloat(result)
+
+    if(inputReais.value) {
+        document.querySelector('#outputTip').value = `R$: ${result.toFixed(2)}`
+    
+        document.querySelector('#outputBill').value = `R$: ${amountTip.toFixed(2)}`
+    } else {
+        document.querySelector('#outputTip').value = `R$: ${' '}`
+    
+        document.querySelector('#outputBill').value = `R$: ${' '}`
+    }
+}) 
+
+
 
 
 

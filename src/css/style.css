@@ -23,6 +23,7 @@ h1 {
 h2 {
     margin: 10px 0;
     font-size: 20px;
+    color: rgba(255, 255, 255, 0.781);
 }
 
 
@@ -55,6 +56,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: azure;
     background-color: rgba(128, 128, 128, 0.452);
     border: none;
     border-radius: 5px;
@@ -68,19 +70,21 @@ input {
 
 
 .card {
-    width: 323px;
-    height: 320px;
+    width: 322px;
+    height: 322px;
     background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
-    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
     transition: all .3s;
    }
    
    .card2 {
     width: 322px;
     height: 322px;
-    background-color: #86868698;
+    background-color: #353535c5;
     border-radius: 15px;
     transition: all .2s;
+    
 
     display: flex;
     justify-content: center;
@@ -89,7 +93,8 @@ input {
    
    .card2:hover {
     transform: scale(0.98);
-    border-radius: 20px;
+    border-radius: 15px;
+    background-color: #5757578a;
    }
    
    .card:hover {
