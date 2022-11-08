@@ -42,6 +42,10 @@ input {
     border-radius: 5px;
 }
 
+input:disabled {
+    background-color: #ffffff;
+}
+
 .simbol {
     display: flex;
     align-items: center;
